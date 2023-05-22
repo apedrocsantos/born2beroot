@@ -1,12 +1,11 @@
-## SUDO
+## SUDO (Super User Do)
 #### Install sudo
 1. su -
 2. apt get update / upgrade
 3. apt install sudo
 
-#### Add user to sudo group
-1. usermod -aG sudo [username]
-2. su visudo
+#### Su (Switch User)
+su - username (if no username, switches to root)
 
 ## SSH
 #### Instal ssh server
@@ -56,25 +55,45 @@ ssh user@ip -p 4242
 ## USERS
 #### Create, modify, delete
 adduser (/ useradd / usermod / userdel)
+sudo useradd -s /bin/bash -m username
+sudo passwd username
 
-#### List all users
-getent passwd
-
-#### List users in group
-getent group [group_name]
-
-#### List users logged in
-who
+#### Change username
+sudo usermod -l username newname
 
 #### delete user
 sudo userdel [username]
 if error -> kill -9 [processnumber]
+
+#### List all users
+getent passwd
+
+#### List users logged in
+who
+
+#### Logout user
+exit or Ctrl - D
+
+## GROUPS
+#### Add user to group
+usermod -aG sudo [username]
+
+#### Remove user from group
+gpasswd -d username groupname
+
+#### List users in group
+getent group [group_name]
+
+### List groups
+cat /etc/group
 
 ## LOCAL GROUPS
 groupadd / groupmod / groupdel
 
 ## SUDOERS
 sudo visudo
+user [hosts] = [commands]
+ALL ALL=(ALL) ALL -> all users are able to run all commands as all users on all hosts
 
 ## CRON (for root)
 #### Enable

@@ -10,6 +10,7 @@
 
 ### Kernel
 core functionality of the OS (memory management, multitasking, dealing with I/O).
+Interfaces with the hardware (CPU, RAM, HD, I/O, etc). Middleman between OS and hardware.
 
 ### Aptitude vs apt (Advanced Packaging Tool)
 Both handle software installation and removal; Aptitude is a higher level package manager, and provides a terminal menu interface, apt is a command-line tool; Both track which packages were manually installed and which were installed as dependencies (and therefore eligible for automatic removal); Aptitude automatically removes eligible packages; Aptitude performs the functions of not just apt-get but also some of its companion tools such as apt-cache and apt-mark; aptitude can suggest solutions to conflicting actions; Aptitude offers better functionality; Aptitude offers why and why-not commands to know more about the behavior of actions;
