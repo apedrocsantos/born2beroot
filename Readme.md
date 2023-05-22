@@ -43,11 +43,14 @@ Mac addresses are associated with specific devices and assigned to them by the m
 
 ### Install VM
 [https://www.howtogeek.com/796988/how-to-install-linux-in-virtualbox]
+
 ### Install OS
 [https://linuxconfig.org/ubuntu-server-tutorial-for-beginners]
 [https://www.howtoforge.com/tutorial/debian-minimal-server/]
+
 ### Block Devices
 [https://www.howtouselinux.com/post/block-device]
+
 ### Apt vs aptitude
 [https://unix.stackexchange.com/questions/767/what-is-the-real-difference-between-apt-get-and-aptitude-how-about-wajig]
 [https://www.fosslinux.com/43884/apt-vs-aptitude.htm][https://www.fosslinux.com/43884/apt-vs-aptitude.htm]
@@ -61,13 +64,16 @@ Mac addresses are associated with specific devices and assigned to them by the m
 ### Password policies
 [Here](https://ostechnix.com/how-to-set-password-policies-in-linux/)
 [https://www.redhat.com/sysadmin/managing-users-passwd]
+
 ### Sudo
 [https://www.howtogeek.com/111479/htg-explains-whats-the-difference-between-sudo-su/]
 [https://www.howtogeek.com/447906/how-to-control-sudo-access-on-linux/]
+
 ### Sudoers config
 [https://www.sudo.ws/docs/man/1.8.15/sudoers.man/#SUDOERS_OPTIONS] 
+
 ### TTY
-[https://www.howtogeek.com/428174/what-is-a-tty-on-linux-and-how-to-use-the-tty-command/]
+[THIS](https://www.howtogeek.com/428174/what-is-a-tty-on-linux-and-how-to-use-the-tty-command/)
 
 ## Computer Architecture
 
