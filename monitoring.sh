@@ -20,7 +20,7 @@ echo "\t#Architecture: " $ar
 echo "\t#CPU physical: " $fcpu 
 echo "\t#vCPU: " $vcpu
 echo "\t#Memory Usage: " $(echo $memu)"/"$(echo $memt)"MB ("$(echo $memp)"%)" 
-echo "\t#Disk Usage: "$(echo $tdu)"/"$(echo $tdt)" ("$(echo $tdp)"%)"
+echo "\t#Disk Usage: "$(echo $tdu)"/"$(echo $tdt)" ("$(echo $tdp)")"
 echo "\t#CPU load: "
 echo "\t#Last boot: "$lb
 echo "\t#LVM use: "$lvm

@@ -19,12 +19,11 @@ Both handle software installation and removal; Aptitude is a higher level packag
 ### Daemon
 Daemons are utility programs (processes) that run silently in the background to monitor and take care of certain subsystems to ensure that the operating system runs properly. They perform certain actions at predefined times or in response to certain events. There are many daemons that run on a Linux system, each specifically designed to watch over its own little piece of the system, and because they are not under the direct control of a user, they are effectively invisible, but essential.
 
-### AppArmor -
+### AppArmor
+AppArmor is an effective and easy-to-use Linux application security system. AppArmor proactively protects the operating system and applications from external or internal threats, even zero-day attacks, by enforcing good behavior and preventing both known and unknown application flaws from being exploited.
 
 ### SSH (Secure Shell)
 The SSH protocol is an encrypted protocol designed to give a secure connection over an insecure network, such as the internet. SSH in Linux is built on a portable version of the OpenSSH project. It is implemented in a classic client-server model, with an SSH server accepting connections from SSH clients. The client is used to connect to the server and to display the session to the remote user. The server accepts the connection and executes the session.
-
-
 
 ### UFW (Uncomplicated Firewall) -
 
@@ -34,14 +33,13 @@ Both sudo and su are used to run commands with root permissions. The root user h
 ### Difference between physical and virtual processors -
 
 ### LVM - Logical Volume Manager (pvdisplay | lvdisplay)
+LVM allows for a layer of abstraction between the OS and the disks/partitions it uses. In traditional disk management, the OS looks for what disks are available and then looks at what partitions are avaliable on those disks. With LVM, disks and partitions can be abstracted to contain multiple disks and partitions into one device. Because volume groups and logical volumes aren't physically tied to a hard drive, it makes it easy to dynamically resize and create new disks and partitions.
 
 ### TCP (Transmission Control Protocol)
 Transport protocol that is used on top of IP to ensure reliable transmission of packets.
 
 ### MAC (Media Acess Control)
 Mac addresses are associated with specific devices and assigned to them by the manufacturer.
-
-  
 
 ### Install VM
 [https://www.howtogeek.com/796988/how-to-install-linux-in-virtualbox]
@@ -56,10 +54,12 @@ Mac addresses are associated with specific devices and assigned to them by the m
 
 ### AppArmor
 [https://www.apparmor.net/]
-### SSH -
+
+### SSH
+[https://linuxconfig.org/linux-setup-ssh]
 
 ### Password policies
-[https://ostechnix.com/how-to-set-password-policies-in-linux/]
+[Here](https://ostechnix.com/how-to-set-password-policies-in-linux/)
 [https://www.redhat.com/sysadmin/managing-users-passwd]
 ### Sudo
 [https://www.howtogeek.com/111479/htg-explains-whats-the-difference-between-sudo-su/]
@@ -113,9 +113,6 @@ Most OSes provide binary compatibility, in each version of the OS, for most bina
 
 ### Source-code compatibility
 recompilation or interpretation is necessary before the program can be run on the compatible system.
-
-
-Physical Memory Allocation / Dynamic Memory Allocation
 
 ### OS
 Kernel + Programs and Libraries
