@@ -1,7 +1,7 @@
 ## SUDO (Super User Do)
 #### Install sudo
 1. su -
-2. apt get update / upgrade
+2. apt get-update / upgrade
 3. apt install sudo
 
 #### Su (Switch User)
@@ -21,9 +21,6 @@ sudo systemctl enable ssh
 #### Check whether SSH server is running
 sudo systemctl status ssh
 
-#### Allow ssh through firewall
-sudo ufw allow ssh
-
 #### Change ssh port
 1. nano /etc/ssh/ssh_config
 2. sudo systemctl reload sshd
@@ -35,8 +32,8 @@ sudo ufw allow ssh
 3. sudo ufw enable
 
 #### Open SSH port using ufw
-sudo ufw allow 4242/tcp
-
+4. PASS_MAX_DAYS | PASS_MIN_DAYS | PASS_WARN_AGE
+sudo ufw allow 4242
 #### Connect using ssh
 ssh user@ip -p 4242
 
@@ -47,10 +44,13 @@ ssh user@ip -p 4242
 ## PASSWORDS
 #### Set password policies
 1. sudo apt install libpam-pwquality
-2. sudo nano /etc/pam.d/common-password
-3. ucredit=-1 | lcredit=-1 | dcredit=-1
-4. sudo nano /etc/login.defs
-5. PASS_MAX_DAYS | PASS_MIN_DAYS | PASS_WARN_AGE
+2. sudo nano /etc/login.defs
+3. sudo nano /etc/security/pwquality.conf
+
+## SUDO GROUP
+sudo visudo
+user [hosts] = [commands]
+ALL ALL=(ALL) ALL -> all users are able to run all commands as all users on all hosts
 
 ## USERS
 #### Create, modify, delete
@@ -89,11 +89,6 @@ cat /etc/group
 
 ## LOCAL GROUPS
 groupadd / groupmod / groupdel
-
-## SUDOERS
-sudo visudo
-user [hosts] = [commands]
-ALL ALL=(ALL) ALL -> all users are able to run all commands as all users on all hosts
 
 ## CRON (for root)
 #### Enable

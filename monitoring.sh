@@ -11,9 +11,11 @@ tdp=$(df --total | grep 'total' | awk '{printf $5}')
 cpul=$()
 lb=$(who -b | awk '{printf $3" "}{printf $4}')
 lvm=$(if [ $(lsblk | grep lvm -wc) -eq 0 ]; then echo no; else echo yes; fi)
-ctcp=$(ss -t state established | wc -l)
+ctcp=$(ss -t | grep ESTAB | wc -l)
 ul=$(users | wc -w)
-ntw= 
+ip=$(hostname -I | awk '{print $1}') 
+mac=$(ip a | grep link/ether | awk '{print $2}')
+sd=$(cat /var/log/sudo/sudo.log | grep COMMAND | wc -l)
 echo "\t#Architecture: " $ar
 echo "\t#CPU physical: " $fcpu 
 echo "\t#vCPU: " $vcpu
@@ -24,6 +26,6 @@ echo "\t#Last boot: "$lb
 echo "\t#LVM use: "$lvm
 echo "\t#Connections TCP: " $ctcp ESTABLISHED
 echo "\t#User log: " $ul
-echo "\t#Network:  $(ip a | grep "inet " | awk '{printf $2" "}') ("$(ip a | grep "ether" | awk '{printf $2 " "}')")"
-echo "\t#Sudo: "
+echo "\t#Network: " $ip "("$mac")"
+echo "\t#Sudo: " $sd cmd
 
