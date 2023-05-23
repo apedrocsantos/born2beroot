@@ -4,6 +4,9 @@
 2. apt get-update / upgrade
 3. apt install sudo
 
+#### Check sudo install
+sudo -V
+
 #### Su (Switch User)
 su - username (if no username, switches to root)
 
@@ -32,10 +35,13 @@ sudo systemctl status ssh
 3. sudo ufw enable
 
 #### Open SSH port using ufw
-4. PASS_MAX_DAYS | PASS_MIN_DAYS | PASS_WARN_AGE
 sudo ufw allow 4242
+
 #### Connect using ssh
 ssh user@ip -p 4242
+
+#### Close port using ufw
+sudo ufw delete allow 4242
 
 #### Deny sudo access do SSH
 1. sudo nano /etc/ssh/sshd_config
@@ -97,3 +103,6 @@ sudo systemctl enable cron
 #### start crontab
 crontab -e
 wall (write to all)
+
+##APPArmor
+aa-status

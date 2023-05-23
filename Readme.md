@@ -7,7 +7,7 @@
   Allows the user to run an OS in an app window on the computer that behaves like a separate computer. Can have different OSs running, be used to run software the main OS can’t and try apps in a safe sandboxed environment. Has virtual hardware devices. The OS actually running on the computer is called the host and the OSs running inside VMs are guests.
 
 ### Grub
-Boot loader. Loads when you first boot up your computer. It normally just boots the Linux kernel, which loads the rest of theOS, but it also provides a menu with options of its own.
+Boot loader. Loads when you first boot up your computer. It normally just boots the Linux kernel, which loads the rest of the OS, but it also provides a menu with options of its own.
 
 ### Kernel
 core functionality of the OS (memory management, multitasking, dealing with I/O).
@@ -25,12 +25,11 @@ AppArmor is an effective and easy-to-use Linux application security system. AppA
 ### SSH (Secure Shell)
 The SSH protocol is an encrypted protocol designed to give a secure connection over an insecure network, such as the internet. SSH in Linux is built on a portable version of the OpenSSH project. It is implemented in a classic client-server model, with an SSH server accepting connections from SSH clients. The client is used to connect to the server and to display the session to the remote user. The server accepts the connection and executes the session.
 
-### UFW (Uncomplicated Firewall) -
+### UFW (Uncomplicated Firewall)
+Provides a user-friendly framework for managing netfilter and a CLI interface for working with the firewall. Has a few GUI that simplifies working with the system.
 
 ### Sudo vs su
 Both sudo and su are used to run commands with root permissions. The root user has maximum permissions and can do anything to the system. Normal users on windows run with reduced permissions - e.g. can’t install software or write to system directories. The su command switches to the super user (or root user) when executed with no additional commands, and asks for the root accounts password. If the su bob command is executed, the password for Bob will be prompted and the shell will switch to Bob’s user account. To leave root, type exit. Sudo runs a single command with root privileges. The system prompts for the current user account’s password before running the command as root. Su switches to root user account and requires the root account’s password. Sudo runs a single command with root privileges - it doesn’t switch to the root user or require a separate root user password.
-
-### Difference between physical and virtual processors -
 
 ### LVM - Logical Volume Manager (pvdisplay | lvdisplay)
 LVM allows for a layer of abstraction between the OS and the disks/partitions it uses. In traditional disk management, the OS looks for what disks are available and then looks at what partitions are avaliable on those disks. With LVM, disks and partitions can be abstracted to contain multiple disks and partitions into one device. Because volume groups and logical volumes aren't physically tied to a hard drive, it makes it easy to dynamically resize and create new disks and partitions.
