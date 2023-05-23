@@ -18,7 +18,7 @@ mac=$(ip a | grep link/ether | awk '{print $2}')
 sd=$(cat /var/log/sudo/sudo.log | grep COMMAND | wc -l)
 echo "\t#Architecture: " $ar
 echo "\t#CPU physical: " $fcpu 
-echo "\t#vCPU: " $vcp
+echo "\t#vCPU: " $vcpu
 echo "\t#Memory Usage: " $(echo $memu)"/"$(echo $memt)"MB ("$(echo $memp)")" 
 echo "\t#Disk Usage: "$(echo $tdu)"/"$(echo $tdt)" ("$(echo $tdp)")"
 echo "\t#CPU load: " $cpul%
