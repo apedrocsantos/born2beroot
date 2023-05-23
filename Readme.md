@@ -19,8 +19,10 @@ Both handle software installation and removal; Aptitude is a higher level packag
 ### Daemon
 Daemons are utility programs (processes) that run silently in the background to monitor and take care of certain subsystems to ensure that the operating system runs properly. They perform certain actions at predefined times or in response to certain events. There are many daemons that run on a Linux system, each specifically designed to watch over its own little piece of the system, and because they are not under the direct control of a user, they are effectively invisible, but essential.
 
-### AppArmor
+### APPArmor
 AppArmor is an effective and easy-to-use Linux application security system. AppArmor proactively protects the operating system and applications from external or internal threats, even zero-day attacks, by enforcing good behavior and preventing both known and unknown application flaws from being exploited.
+APPArmor allows the system administrator to restrict programs' capabilities with per-program profiles.
+APPArmor is offered in part as an alternative to SELinux, which critics consider difficuld for administrators to setup and maintain.
 
 ### SSH (Secure Shell)
 The SSH protocol is an encrypted protocol designed to give a secure connection over an insecure network, such as the internet. SSH in Linux is built on a portable version of the OpenSSH project. It is implemented in a classic client-server model, with an SSH server accepting connections from SSH clients. The client is used to connect to the server and to display the session to the remote user. The server accepts the connection and executes the session.
