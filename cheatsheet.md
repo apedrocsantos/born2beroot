@@ -104,5 +104,8 @@ sudo systemctl enable cron
 crontab -e
 wall (write to all)
 
-##APPArmor
+## APPArmor
 aa-status
+
+## Host
+sudo hostnamectl set-hostname [username]

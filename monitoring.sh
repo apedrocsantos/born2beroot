@@ -15,7 +15,7 @@ ctcp=$(ss -t | grep ESTAB | wc -l)
 ul=$(users | wc -w)
 ip=$(hostname -I | awk '{print $1}') 
 mac=$(ip a | grep link/ether | awk '{print $2}')
-sd=$(cat /var/log/sudo/sudo.log | grep COMMAND | wc -l)
+sd=$(cat /var/log/sudo/sudo.log | grep -a COMMAND | wc -l)
 echo "\t#Architecture: " $ar
 echo "\t#CPU physical: " $fcpu 
 echo "\t#vCPU: " $vcpu

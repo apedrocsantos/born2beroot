@@ -128,6 +128,8 @@ Kernel + Programs and Libraries
 Processes instructions that come from programs, the OS, or other components in the PC. The CPU clock speed is the number of instructions it can process in any given second, measured in GHz.
 The CPU sits in a socket on the PC's motherboard. Once it's seated in the socket, other parts of the computer can connect to the CPU through buses. Ram connects to the CPU through its own bus, while many PC components use a specific type of bus, called a PCIe.
 The CPU isn't the only way to process instructions. Other components, such as the graphics card, have their own onboard processing capabilities. The GPU also uses its own processing capabilities to work with the CPU.
+A single modern CPU typically has multiple cores. Each core is its own processor. Simultaneous multi-threading, called Hyper-Threading by Intel, splits each physical core into two logical processors. Each logical processor lets your operating system run two separate tasks. For example, an eight-core CPU appears as a single CPU with 8 cores and 16 logical processors.
+
 CPUs can have a single core or multi-cores. Some CPUs can virtualize two cores for every one phyical core that's available - *Hyper-threading*. Virtualizing means that a CPU with four cores can function as if it has eight, with the additional virtual CPU cores referred to as separate *threads*. Physical cores, though, perform better than virtual ones.
 
 https://www.lifewire.com/what-is-a-cpu-2618150
