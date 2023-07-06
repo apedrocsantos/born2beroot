@@ -136,3 +136,5 @@ https://www.lifewire.com/what-is-a-cpu-2618150
 https://www.howtogeek.com/194756/cpu-basics-multiple-cpus-cores-and-hyper-threading-explained/
 https://www.howtogeek.com/443790/what%E2%80%99s-the-difference-between-intel-core-i3-i5-i7-and-x-cpus/
 https://www.howtogeek.com/367931/htg-explains-how-does-a-cpu-actually-work/
+
+[![anda-cun's 42 stats](https://badge42.vercel.app/api/v2/cljrnpnqj002508jsqp67mooz/stats?cursusId=21&coalitionId=111)](https://github.com/JaeSeoKim/badge42)
