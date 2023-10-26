@@ -1,5 +1,3 @@
-[![anda-cun's 42 Born2beroot Score](https://badge42.vercel.app/api/v2/cljrnpnqj002508jsqp67mooz/project/3087134)](https://github.com/JaeSeoKim/badge42)
-
 # Born2beroot
 
 ## Glossary
